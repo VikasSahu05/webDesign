@@ -75,19 +75,19 @@
                     <div class="d-flex justify-content-center align-items-center second-section-content">
                         <div class="d-flex flex-column section-content text-light border-color-lg mr-5">
                             <span class="ml-3 mb-2 border-color">CURRENT LISTINGS</span>
-                            <span class="ml-3 mb-3 count-text">93</span>
+                            <span class="ml-3 mb-3 count-text counter" data-target="930"></span>
                         </div>
                         <div class="d-flex flex-column section-content  text-light border-color-lg mr-5">
                             <span class="ml-3 mb-2 border-color">SOLD PROPERTIES</span>
-                            <span class="ml-3 mb-3 count-text">735</span>
+                            <span class="ml-3 mb-3 count-text counter" data-target="735"></span>
                         </div>
                         <div class="d-flex flex-column section-content  text-light border-color-lg mr-5">
                             <span class="ml-3 mb-2 border-color">TOTAL SALES</span>
-                            <span class="ml-3 mb-3 count-text">$1025m</span>
+                            $<span class="ml-3 mb-3 count-text counter" data-target="1025"></span>
                         </div>
                         <div class="d-flex flex-column section-content  text-light border-color-lg mr-5">
                             <span class="ml-3 mb-2 border-color">AVERAGE DAYS ON MARKET</span>
-                            <span class="ml-3 mb-3 count-text">27</span>
+                            <span class="ml-3 mb-3 count-text counter" data-target="254"></span>
                         </div>
                     </div>
                     <p class="text-light text-center pt-5 pb-3 paratext-size">*as per ratemyagent.com.au over the past 12 months</p>
@@ -535,6 +535,30 @@
         <!-- scripting section start here -->
         <script type="text/javascript">
             /// some script
+            
+//           Animated counter start  
+        var counters = document.querySelectorAll('.counter');
+        counters.forEach((counter) => {
+            counter.innerText = '0';
+            const updateCounter = ()=>{
+                const target = +counter.getAttribute('data-target');
+                // console.log(typeof target,target);
+
+                const c = +counter.innerText;
+
+                const increment = target/250;
+
+                if(c<target){
+                    counter.innerText = `${Math.ceil(c + increment)}`;
+                    setTimeout(updateCounter,50);
+                }else{
+                    counter.innerText = target;
+                }
+            };
+            updateCounter();
+        });
+//                    Animated counter end
+            
             $(function () {
                 "use strict";
 
