@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'slimdings';
+    font-display: swap;
+    src: url('/fonts/slimdings/slimdings_regular.eot');
+    src: url('/fonts/slimdings/slimdings_regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/slimdings/slimdings_regular.woff2') format('woff2'),
+         url('/fonts/slimdings/slimdings_regular.woff') format('woff'),
+         url('/fonts/slimdings/slimdings_regular.ttf') format('truetype'),
+         url('/fonts/slimdings/slimdings_regular.svg#slimdingsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.sd
+{
+    font-family: "slimdings" !important;
+    display: inline-block;
+    vertical-align: bottom;
+    font-style: normal;
+    line-height: inherit;
+    font-weight: 400;
+    font-size: inherit;
+}
+
+[class*="sidenav-"] .sd[data-class-cancel="active"]
+{
+    font-size: 2rem;
+    // width: 3rem;
+    cursor: pointer;
+    line-height: 1;
+    text-align: center;
+}
+
+

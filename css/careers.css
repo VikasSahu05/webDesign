@@ -1,0 +1,59 @@
+@media only screen and (min-width: 992px) {
+    .careers-images-style{
+        position: relative;
+        top: 10%;
+        left: -29%;
+    }
+  } 
+  .required-text{
+      font-size: 10px;
+  }
+  
+  /* .input-file-container {
+    position: relative;
+    width: 225px;
+  } 
+  .js .input-file-trigger {
+    display: block;
+    padding: 14px 45px;
+    background: #17a2b8;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+  }
+  .js .input-file {
+    position: absolute;
+    top: 0; left: 0;
+    width: 225px;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+  }
+  .js .input-file:hover + .input-file-trigger,
+  .js .input-file:focus + .input-file-trigger,
+  .js .input-file-trigger:hover,
+  .js .input-file-trigger:focus {
+    
+    color: #ffffff;
+  }
+  
+  .file-return {
+    margin: 0;
+  }
+  .file-return:not(:empty) {
+    margin: 1em 0;
+  }
+  .js .file-return {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: bold;
+  }
+  .js .file-return:not(:empty):before {
+    content: "Selected file: ";
+    font-style: normal;
+    font-weight: normal;
+  } */
+  
+  
+

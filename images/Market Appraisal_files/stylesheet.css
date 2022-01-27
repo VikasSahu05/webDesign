@@ -1,0 +1,34 @@
+@font-face {
+    font-display: swap;    
+    font-family: 'webfrontdingbats';
+    src: url('webfront_dingbats.eot');
+    src: url('webfront_dingbats.eot?#iefix') format('embedded-opentype'),
+         url('webfront_dingbats.woff') format('woff'),
+         url('webfront_dingbats.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+i.icon-car:after,
+i.icon-bath:after,
+i.icon-bed:after
+{
+    display: inline-block;
+    font-family: "webfrontdingbats";
+    font-weight: 400;
+    font-style: normal;
+    color: inherit;
+    margin: 0 0.25em;
+    content: "q";
+}
+
+i.icon-bath:after
+{
+    content: "a";
+}
+
+i.icon-bed:after
+{
+    content: "z";
+}
